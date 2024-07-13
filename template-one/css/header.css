@@ -1,0 +1,86 @@
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container .header-logo {
+    width: 120px;
+}
+
+.header .container .design-header-links {
+    position: relative;
+    transition: var(--main-transation-time, 0.5s);
+}
+
+
+.header .container .design-header-links .icon-shape {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30px;
+    justify-content: end;
+
+}
+
+.header .container .design-header-links .icon-shape :nth-child(2) {
+    width: 30%;
+    transition: var(--main-transation-time, 0.2s);
+}
+
+.header .container .design-header-links:hover .icon-shape :nth-child(2) {
+    width: 100%;
+}
+
+.header .container .design-header-links .ul-links {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 20px);
+    display: none;
+    transition: var(--main-transation-time, 0.5s);
+}
+
+.header .container .design-header-links:hover .ul-links {
+    display: block;
+}
+
+
+.header .container .design-header-links ul {
+
+    padding: 0;
+    margin: 0;
+    width: 180px;
+    background: #DDD;
+    list-style-type: none;
+}
+
+.header .container .design-header-links .ul-links ul::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-width: 10px;
+    border-color: transparent transparent #DDD;
+    border-style: solid;
+    right: 5.4px;
+    top: -19.2px;
+}
+
+.header .container .design-header-links ul li {
+    padding: 9px;
+    transition: var(--main-transation-time, 0.5s);
+}
+
+.header .container .design-header-links ul li:hover {
+    padding-left: 14px;
+}
+
+.header .container .design-header-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.header .container .design-header-links ul li:not(:last-child) {
+    border-bottom: 1.5px solid #F27DA5;
+}

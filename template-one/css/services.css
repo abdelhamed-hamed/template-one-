@@ -1,0 +1,111 @@
+.services {
+    padding: var(--main-padding-between-all-bransh, 10px);
+
+}
+
+.services .service-content {
+    margin-top: var(--main-margin-between-all-bransh, 50px);
+}
+
+.services .address {
+    text-align: center;
+}
+
+@media (max-width:397px) {
+    .services .address {
+        text-align: revert;
+    }
+}
+
+
+@media (max-width:397px) {
+    .services .address h2 {
+        letter-spacing: 0;
+        font-size: 35px;
+        margin-bottom: 62px;
+    }
+}
+
+.services .address p {
+    margin-top: var(--main-margin-top-p-adress, 10px);
+}
+
+.services .service-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+}
+
+@media (max-width:1019px) {
+    .services .service-content {
+        gap: revert;
+    }
+}
+
+@media (max-width:769px) {
+    .services .service-content {
+        grid-template-columns: auto;
+    }
+}
+
+.services .service-content .element .bransh {
+    display: flex;
+    margin-bottom: 57px;
+}
+
+@media (max-width:769px) {
+    .services .service-content .element .bransh {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.services .service-content .element .bransh div {
+    margin-left: 22px;
+}
+
+.services .service-content .element .bransh div h3 {
+    margin-top: 0;
+}
+
+
+
+@media (max-width:769px) {
+    .services .service-content .element .bransh div h3 {
+        margin-top: revert;
+    }
+}
+
+.element-image {
+    width: fit-content;
+    position: relative;
+    height: 100%;
+    width: 285px;
+    display: none;
+
+
+}
+
+.services .service-content .element img {
+    height: 100%;
+    width: 285px;
+
+}
+
+@media (min-width:994px) {
+    .services .service-content .element .element-image {
+        display: block;
+    }
+
+}
+
+
+.services .service-content .element .element-image::before {
+    content: '';
+    position: absolute;
+    width: 76px;
+    height: calc(100% + 40px);
+    background-color: #333;
+    right: 0;
+    top: -20px;
+}

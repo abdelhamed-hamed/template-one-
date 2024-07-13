@@ -1,0 +1,37 @@
+.feautres {
+    background-color: #F7EEEE;
+    padding-top: var(--main-padding-between-all-bransh, 40px);
+}
+
+.feautres .feautres-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 76px;
+    padding: 50px;
+    text-align: center;
+}
+
+@media (max-width:300px) {
+    .feautres .feautres-content {
+        grid-template-columns: 200px;
+        padding: revert;
+        text-align: center;
+        position: relative;
+        left: 50%;
+        translate: -39%;
+    }
+}
+
+
+.feautres .feautres-content :last-child h3 {
+    white-space: nowrap;
+
+}
+
+@media (max-width:300px) {
+
+    .feautres .feautres-content :last-child h3 {
+        white-space: revert;
+
+    }
+}

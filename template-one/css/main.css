@@ -1,0 +1,104 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Root Values */
+:root {
+    --main-transation-time: 0.4s;
+    --main-padding-between-all-bransh: 30px;
+    --main-margin-between-all-bransh: 85px;
+    --main-margin-top-p-adress: -55px;
+    --main-color: #10CAB7;
+    --secondery-color: #F7EEEE;
+}
+
+/* End Root Values */
+body {
+    font-family: 'Jomhuria', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Start Repeated Values */
+/* Icon Style */
+.span-child-style {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(51, 51, 51);
+    margin-bottom: 3px;
+}
+
+/* End Icon Style */
+/* Start h2 Style */
+.h-two-style {
+    letter-spacing: 10px;
+    font-size: 62px;
+    margin-top: 0;
+    color: #DDDDDD;
+}
+
+/* End h2 Style */
+/* Start h3-style */
+.h-three-style {
+    font-weight: 900;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+/* End h3-style */
+/* Start p-style */
+.p-style {
+    font-weight: bolder;
+    color: #777777;
+    line-height: 1.8;
+    /* font-weight: bold; */
+    text-transform: capitalize;
+    font-size: 17px;
+
+}
+
+/*End p-style */
+/* Start Icon Style */
+.icon-style {
+    color: var(--main-color);
+    font-size: 60px;
+}
+
+/* End Icon Style */
+/* End Reapeted Values */
+
+/* Container Rules */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Container Rules */
